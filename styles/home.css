@@ -1,4 +1,18 @@
-header h1{
+body{
+    height: 100vh;
+    margin: auto;
+}
+
+header{
+    display: flex;
+}
+
+header a{
     display: flex;
     justify-content: center;
+}
+
+header b{
+    display: flex;
+    justify-content: end;
 }
