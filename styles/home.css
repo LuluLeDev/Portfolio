@@ -1,18 +1,73 @@
-body{
+@import url(/styles/import/font.css);
+
+body {
     height: 100vh;
     margin: auto;
+    font-family: 'Righteous', cursive;
+    color: whitesmoke;
 }
 
-header{
+header {
     display: flex;
+    background-color: rgb(56, 53, 53);
+    height: 20vh;
 }
 
-header a{
-    display: flex;
-    justify-content: center;
+.a {
+    padding-left: 42vw;
 }
 
-header b{
-    display: flex;
-    justify-content: end;
+.name {
+    font-size: 13px;
+}
+
+.name h1:nth-child(2) {
+    padding-left: 2vw;
+}
+
+.name h1:nth-child(3) {
+    padding-left: 4vw;
+}
+
+.b {
+    padding-left: 30vw;
+}
+
+.b button {
+    margin-top: 7vh;
+    font-family: 'Righteous', cursive;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(56, 53, 53);
+}
+
+.b button a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#mid {
+    height: 80vh;
+    background-color: rgb(100, 96, 96);
+}
+
+#mid button {
+    width: 150px;
+    height: 50px;
+    margin-top: 65vh;
+    margin-left: 44vw;
+    border-radius: 30px;
+    transition-duration: 0.8s;
+    border: solid 2px rgb(56, 53, 53);
+}
+
+#mid button:hover {
+    transform: scale(1.1);
+}
+
+#mid button a {
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(56, 53, 53);
+    font-family: 'Righteous', cursive;
 }
