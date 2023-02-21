@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     background-color: rgb(56, 53, 53);
-    height: 20vh;
+    height: 15vh;
 }
 
 .a {
@@ -19,6 +19,11 @@ header {
 
 .name {
     font-size: 13px;
+    margin-top: 22px;
+}
+
+.name h1{
+    margin-top: -16px;
 }
 
 .name h1:nth-child(2) {
@@ -34,11 +39,12 @@ header {
 }
 
 .b button {
-    margin-top: 7vh;
+    margin-top: 5.5vh;
     font-family: 'Righteous', cursive;
     border: none;
     font-weight: bold;
     background-color: rgb(56, 53, 53);
+    font-size: 18px;
 }
 
 .b button a {
@@ -47,18 +53,38 @@ header {
 }
 
 #mid {
-    height: 80vh;
+    height: 85vh;
     background-color: rgb(100, 96, 96);
 }
 
+#mid .backImg{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 85vh;
+    filter: blur(1.3px);
+}
+
+#mid .imgLucas{
+    position: absolute;
+    z-index: 2;
+    width: 17vw;
+    height: 45vh;
+    left: 15%;
+    top: 32%;
+    border-radius: 100px;
+}
+
 #mid button {
+    position: relative;
+    z-index: 3;
     width: 150px;
     height: 50px;
-    margin-top: 65vh;
-    margin-left: 44vw;
     border-radius: 30px;
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
+    top: 85%;
+    left: 42%;
 }
 
 #mid button:hover {
@@ -66,8 +92,12 @@ header {
 }
 
 #mid button a {
-    margin: 20px;
+    display: block;
+    width: 140px;
+    height: 35px;
+    padding-top: 10px;
     text-decoration: none;
     color: rgb(56, 53, 53);
     font-family: 'Righteous', cursive;
+    font-size: 18px;
 }
