@@ -1,4 +1,4 @@
-@import url(/styles/import/font.css);
+@import url(import/font.css);
 
 body {
     height: 100vh;
@@ -65,14 +65,20 @@ header {
     filter: blur(1.3px);
 }
 
-#mid .imgLucas{
+#mid .logo{
     position: absolute;
     z-index: 2;
-    width: 17vw;
-    height: 45vh;
-    left: 15%;
-    top: 32%;
-    border-radius: 100px;
+    right: 1%;
+    top: 40%;
+    width: 6vh;
+}
+
+a .logo:nth-child(3){
+    top: 48% !important;
+}
+
+a .logo:last-of-type{
+    top: 56% !important;
 }
 
 #mid button {
