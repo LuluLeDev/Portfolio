@@ -1,4 +1,5 @@
 @import url(import/font.css);
+@import url(carousel.css);
 
 body {
     height: 100vh;
@@ -97,7 +98,7 @@ header {
     border-radius: 30px;
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
-    top: 85%;
+    top: 35%;
     left: 42%;
 }
 
