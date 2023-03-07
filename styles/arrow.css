@@ -1,6 +1,9 @@
 .arrow-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-left: 15vw;
 }
 
 .arrow-wrapper:hover h1 {

@@ -3,7 +3,7 @@
 
 body {
     height: 100vh;
-    margin: auto;
+    margin: 0;
     font-family: 'Righteous', cursive;
     color: whitesmoke;
 }
@@ -14,12 +14,12 @@ header {
     height: 15vh;
 }
 
-.a {
+.nameHeader {
     padding-left: 42vw;
 }
 
 .name {
-    font-size: 13px;
+    font-size: 100%;
     margin-top: 22px;
 }
 
@@ -35,11 +35,11 @@ header {
     padding-left: 4vw;
 }
 
-.b {
+.contactHeader {
     padding-left: 30vw;
 }
 
-.b button {
+.contactHeader button {
     margin-top: 5.5vh;
     font-family: 'Righteous', cursive;
     border: none;
@@ -48,7 +48,7 @@ header {
     font-size: 18px;
 }
 
-.b button a {
+.contactHeader button a {
     text-decoration: none;
     color: whitesmoke;
 }
@@ -69,13 +69,13 @@ header {
 .SocialButtons a{
     position: absolute;
     z-index: 2;
-    right: 1%;
+    left: 96%;
     top: 40%;
     transition-duration: 0.8s;
 }
 
 .SocialButtons .logo{
-    width: 3.5vw;
+    width: 83%;
 }
 
 .SocialButtons a:hover{
@@ -98,7 +98,7 @@ header {
     border-radius: 30px;
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
-    top: 35%;
+    top: 38%;
     left: 42%;
 }
 

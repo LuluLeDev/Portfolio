@@ -6,32 +6,47 @@
     flex-direction: column;
     z-index: 2;
     width: 40vw;
-    height: 45vh;
+    height: 40vh;
     top: 18%;
     left: 20%;
 }
 
+.carouselImg{
+    width: 20vw;
+    height: 40vh;
+}
+
 .Carousel img{
-    border-radius: 30px;
-    width: 10vw;
+    margin-left: 3%;
+    margin-top: 35%;
+    border-radius: 40px;
+    width: 20vw;
     height: 20vh;
 }
 
-.Container{
+.carouselText{
     display: flex;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: 40vh;
+    margin: 2%;
+}
+
+.container{
+    width: 65vw;
+    height: 50vh;
 }
 
 .diapo{
-    width: 55vw;
+    width: 65vw;
+    height: 50vh;
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    margin: 2rem;
+    background-color: rgba(36, 35, 35, 0.25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); 
     backdrop-filter: blur(15px);
 }
 
-.CarouselImg{
-    width: 10vw;
-    height: 20vh;
+.diapo a{
+    color: rgb(131, 168, 202);
 }
