@@ -6,6 +6,8 @@ body {
     margin: 0;
     font-family: 'Righteous', cursive;
     color: whitesmoke;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,12 +21,13 @@ header {
 }
 
 .name {
-    font-size: 100%;
-    margin-top: 22px;
+    font-size: 0.9rem;
+    margin-top: 2vh;
 }
 
 .name h1{
     margin-top: -16px;
+    letter-spacing: 0.08rem;
 }
 
 .name h1:nth-child(2) {
@@ -51,6 +54,24 @@ header {
 .contactHeader button a {
     text-decoration: none;
     color: whitesmoke;
+    letter-spacing: 0.08rem;
+    position: relative;
+}
+
+.contactHeader a::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 2.5px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.contactHeader a:hover::after{
+    width: 100%;
 }
 
 #mid {
@@ -99,20 +120,59 @@ header {
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
     top: 38%;
-    left: 42%;
+    left: 43.6vw;
+
+    display: block;
+    width: 140px;
+    height: 50px;
+    color: rgb(56, 53, 53);
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
 }
 
 #mid button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-#mid button a {
-    display: block;
-    width: 140px;
-    height: 35px;
-    padding-top: 10px;
-    text-decoration: none;
-    color: rgb(56, 53, 53);
-    font-family: 'Righteous', cursive;
-    font-size: 18px;
+.MeDisplay{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    width: 35vw;
+    height: 63vh;
+    top: -40vh;
+    left: 32vw;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(36, 35, 35, 0.25);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); 
+    backdrop-filter: blur(15px);
+}
+
+.MeDisplay img{
+    width: 12vw;
+    height: 18vh;
+    border-radius: 100%;
+    margin-right: 1.6rem;
+}
+
+.mePres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    letter-spacing: 0.08rem;
+}
+
+.meText{
+    margin: 2rem;
+}
+
+@media (max-width : 852px) {
+    body{
+        opacity: 0;
+    }
 }

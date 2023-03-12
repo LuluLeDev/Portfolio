@@ -3,14 +3,14 @@
     align-items: center;
     justify-content: center;
     margin-top: 3vh;
-    margin-left: 15vw;
+    margin-left: 20vw;
 }
 
 .arrow-wrapper:hover h1 {
     opacity: 1;
 }
 
-#arrow_2 .arrow {
+#Arrow .arrow {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -18,19 +18,20 @@
     text-transform: uppercase;
     position: relative;
     transition: transform 0.3s;
+    margin-inline: 1vw;
   }
-  #arrow_2 .arrow span {
+  #Arrow .arrow span {
     display: block;
     width: 3em;
     opacity: 0;
     transition: opacity 0.3s 0s;
     padding: 0 0.5em;
   }
-  #arrow_2 .arrow:hover span {
+  #Arrow .arrow:hover span {
     opacity: 1;
     transition: opacity 0.3s 0.1s;
   }
-  #arrow_2 .arrow:before {
+  #Arrow .arrow:before {
     content: "";
     display: block;
     border: solid #fff;
@@ -40,27 +41,27 @@
     width: 10px;
     height: 10px;
   }
-  #arrow_2 .arrow.arrow--left:before {
+  #Arrow .arrow.arrow--left:before {
     transform: rotate(-135deg);
     right: 0;
     transition: right 0.3s 0.2s;
   }
-  #arrow_2 .arrow.arrow--left:hover:before {
+  #Arrow .arrow.arrow--left:hover:before {
     right: 100%;
     transition: right 0.3s;
   }
-  #arrow_2 .arrow.arrow--right {
+  #Arrow .arrow.arrow--right {
     text-align: right;
   }
-  #arrow_2 .arrow.arrow--right:before {
+  #Arrow .arrow.arrow--right:before {
     left: 0;
     transform: rotate(45deg);
     transition: left 0.3s 0.2s;
   }
-  #arrow_2 .arrow.arrow--right:hover:before {
+  #Arrow .arrow.arrow--right:hover:before {
     left: 100%;
     transition: left 0.3s;
   }
-  #arrow_2 .arrow:hover {
+  #Arrow .arrow:hover {
     transform: none;
   }

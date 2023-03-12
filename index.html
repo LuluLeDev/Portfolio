@@ -103,7 +103,7 @@
                 </div>
             </div>
 
-            <div id="arrow_2" class="arrow-wrapper">
+            <div id="Arrow" class="arrow-wrapper">
                 <div class="arrow arrow--left" onclick="plusDivs(-1)">
                   <span>Prev</span>
                 </div>
@@ -114,12 +114,17 @@
             <script src="script/carousel.js"></script>
         </div>
 
-        <!-- <div class="textPres">
-            <p>Je suis un Developpeur étudiant de 19 ans à l'IUT de Bordeaux en BUT Informatique <br>
-                Voici mon Portfolio
-            </p>
-        </div> -->
-        <button> <a href=""> Qui suis-je ?</a> </button>
+        <button id="meButton" onclick="showDiv()">Qui suis-je ?</button>
+        <div class="MeDisplay">
+            <div class="mePres">
+                <img src="img/me/IMG_4195.jpg" alt="meImg">
+            <h1>Lucas Girault-Viau</h1>
+            </div>
+            <div class="meText">
+                <p>Je suis un étudiant Développeur de 19 ans à l'IUT de Bordeaux en BUT Informatique</p>
+            </div>
+        </div>
+        <script src="script/meDisplay.js"></script>
     </section>
 
     <footer>
