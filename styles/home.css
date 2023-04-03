@@ -17,7 +17,7 @@ header {
 }
 
 .nameHeader {
-    padding-left: 42vw;
+    padding-left: 45vw;
 }
 
 .name {
@@ -120,7 +120,7 @@ header {
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
     top: 38%;
-    left: 43.6vw;
+    left: 45.5vw;
 
     display: block;
     width: 140px;
@@ -136,7 +136,7 @@ header {
 }
 
 .MeDisplay{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: relative;
     z-index: 2;
@@ -160,7 +160,7 @@ header {
 }
 
 .mePres{
-    display: flex;
+    display: flexs;
     justify-content: center;
     align-items: center;
     margin: 10px;
