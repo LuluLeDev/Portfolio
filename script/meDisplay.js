@@ -1,9 +1,12 @@
 function showDiv(){
-    var div = document.getElementsByClassName("MeDisplay");
-    div.style.display = "none";
-    // if(getComputedStyle(div).display == "none"){
-    //   div.style.display = "flex";
-    // } else {
-    //   div.style.display = "none";
-    // }
+    var divMe = document.getElementById("MeDisplayID");
+    var divCarousel = document.getElementsByClassName("Carousel");
+    var divProp = getComputedStyle(divMe, null);
+    if(divProp.getPropertyValue("display") == "none"){
+       divMe.style.display = "flex";
+       divCarousel[0].style.visibility = "hidden";
+    } else {
+      divMe.style.display = "none";
+      divCarousel[0].style.visibility = "visible";
+    }
 }

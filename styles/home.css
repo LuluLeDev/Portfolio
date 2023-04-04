@@ -139,7 +139,7 @@ header {
     display: none;
     flex-direction: column;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     width: 35vw;
     height: 63vh;
     top: -40vh;
@@ -147,7 +147,7 @@ header {
 
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
-    background-color: rgba(36, 35, 35, 0.25);
+    background-color: rgba(8, 8, 8, 0.397);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); 
     backdrop-filter: blur(15px);
 }
@@ -156,23 +156,57 @@ header {
     width: 12vw;
     height: 18vh;
     border-radius: 100%;
-    margin-right: 1.6rem;
+    margin-left: 33%;
 }
 
 .mePres{
-    display: flexs;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
     letter-spacing: 0.08rem;
 }
 
-.meText{
-    margin: 2rem;
+.mePres h1{
+    text-align: center;
 }
 
-@media (max-width : 852px) {
-    body{
-        opacity: 0;
-    }
+.meText{
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.meInline img{
+    border-radius: 10px;
+    width: 40%;
+    height: 75%;
+    margin-left: 1.2rem;
+}
+
+.mePres h1{
+    color: rgb(131, 168, 202);
+}
+
+.meInline{
+    display: flex;
+}
+
+#cvButton {
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    transition-duration: 0.8s;
+    border: solid 2px rgb(131, 168, 202);
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    margin-top: 6vh;
+    margin-left: 5vw;
+    color: rgb(131, 168, 202);
+    text-decoration: none;
+}
+
+#cvButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }

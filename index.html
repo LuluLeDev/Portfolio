@@ -19,11 +19,11 @@
                 <h1>Viau</h1>
             </div>
         </div>
-        <div class="contactHeader">
+        <!-- <div class="contactHeader">
             <div class="contact">
                 <button> <a href="">Contact</a></button>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <section id="mid">
@@ -51,7 +51,7 @@
                     <div class="carouselImg">
                         <img src="img/ImgSAE/Img_SAEOdomo.png" alt="img_odomo">
                     </div>
-                    <span><a href="">En savoir plus ...</a></span>
+                    <span><a href="retex/odomo.html">En savoir plus ...</a></span>
                 </div>
                 <div class="diapo">
                     <div class="cercles">
@@ -156,8 +156,9 @@
             <script src="script/carousel.js"></script>
         </div>
 
+        <script src="script/meDisplay.js"></script>
         <button id="meButton" onclick="showDiv()">Qui suis-je ?</button>
-        <div class="MeDisplay">
+        <div id="MeDisplayID" class="MeDisplay">
             <div class="mePres">
                 <img src="img/me/IMG_4195.jpg" alt="meImg">
             <h1>Lucas Girault-Viau</h1>
@@ -165,10 +166,13 @@
             <div class="meText">
                 <p>Je suis un étudiant Développeur de 19 ans à l'IUT de Bordeaux en BUT Informatique</p>
             </div>
+            <div class="meInline">
+                <img src="img/me/Profil.png" alt="img_profil">
+                <a id="cvButton" href="/pdf/CV Lucas Girault-Viau.pdf" download="Cv Lucas Girault-Viau">Télecharger CV en PDF</a>
+            </div>
         </div>
-        <script src="script/meDisplay.js"></script>
+        
     </section>
-
     <footer>
 
     </footer>
