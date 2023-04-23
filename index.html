@@ -11,7 +11,23 @@
 </head>
 
 <body>
+    <img class="backImg" src="img/background/backgroundImg.jpg" alt="backgroundImg">
     <header>
+        <script src="script/burger.js"></script>
+        <div id="burgerMenu">
+            <span></span>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><button id="buttonProg">Programmation</button></li>
+                <li><button id="buttonWeb">Web</button></li>
+            </ul>
+        </div>
+        <div class="buttonHeaderLeft">
+            <button id="buttonProg">Programmation</button>
+            <button id="buttonWeb">Web</button>
+        </div>
         <div class="nameHeader">
             <div class="name">
                 <h1>Lucas</h1>
@@ -19,20 +35,23 @@
                 <h1>Viau</h1>
             </div>
         </div>
-        <!-- <div class="contactHeader">
-            <div class="contact">
-                <button> <a href="">Contact</a></button>
-            </div>
-        </div> -->
+        <div class="buttonHeaderRight">
+            <button id="buttonGestion">Gestion de Projet</button>
+            <button id="buttonSQL">SQL</button>
+        </div>
     </header>
 
     <section id="mid">
-        <img class="backImg" src="img/background/backgroundImg.jpg" alt="backgroundImg">
+
         <div class="SocialButtons">
-            <a href="https://github.com/LuluLeDev"><img class="logo" src="img/logo/social-media-gbb614a6e9_1920 (1).png" alt="logo_gitHub"></a>
-            <a href="https://www.linkedin.com/in/lucas-girault-viau-74426b248/"><img class="logo" src="img/logo/social-media-gbb614a6e9_1920 (2).png" alt="logo_linkedin"></a>
-            <a href="mailto:lucas.girault-viau@etu-u.bordeaux.fr" ><img class="logo" src="img/logo/social-media-gbb614a6e9_1920 (3).png" alt="logo_mail"></a>
+            <a href="https://github.com/LuluLeDev"><img class="logo" src="img/logo/social-media-gbb614a6e9_1920 (1).png"
+                    alt="logo_gitHub"></a>
+            <a href="https://www.linkedin.com/in/lucas-girault-viau-74426b248/"><img class="logo"
+                    src="img/logo/social-media-gbb614a6e9_1920 (2).png" alt="logo_linkedin"></a>
+            <a href="mailto:lucas.girault-viau@etu-u.bordeaux.fr"><img class="logo"
+                    src="img/logo/social-media-gbb614a6e9_1920 (3).png" alt="logo_mail"></a>
         </div>
+        
         <div class="Carousel">
             <div class="container">
                 <div class="diapo">
@@ -42,11 +61,14 @@
                         <div class="cercleR"></div>
                     </div>
                     <div class="carouselText">
-                        <h1>Projet Odomo <br> <h3>Programmation d'une station météo avec Java</h3></h1>
+                        <h1>Projet Odomo <br>
+                            <h3>Programmation d'une station météo avec Java</h3>
+                        </h1>
                     </div>
                     <div class="carouselLogo">
                         <img src="img/logoCarousel/Java-Logo.png" alt="logo_java">
-                        <img id="logo_netbeans" src="img/logoCarousel/1200px-Apache_NetBeans_Logo.svg.png" alt="logo_netbeans">
+                        <img id="logo_netbeans" src="img/logoCarousel/1200px-Apache_NetBeans_Logo.svg.png"
+                            alt="logo_netbeans">
                     </div>
                     <div class="carouselImg">
                         <img src="img/ImgSAE/Img_SAEOdomo.png" alt="img_odomo">
@@ -60,11 +82,13 @@
                         <div class="cercleR"></div>
                     </div>
                     <div class="carouselText">
-                        <h1>Repondre à des besoins clients <h3>Création d'un site web</h3></h1>
+                        <h1>Repondre à des besoins clients <h3>Création d'un site web</h3>
+                        </h1>
                     </div>
                     <div class="carouselLogo">
                         <img id="web_logoHtml" src="img/logoCarousel/HTML5_logo_and_wordmark.svg.png" alt="logo_html">
-                        <img id="web_logoCss" src="img/logoCarousel/1452px-CSS3_logo_and_wordmark.svg.png" alt="logo_css">
+                        <img id="web_logoCss" src="img/logoCarousel/1452px-CSS3_logo_and_wordmark.svg.png"
+                            alt="logo_css">
                     </div>
                     <div class="carouselImg">
                         <img src="img/ImgSAE/IMG_SAEWeb.png" alt="img_web">
@@ -78,11 +102,13 @@
                         <div class="cercleR"></div>
                     </div>
                     <div class="carouselText">
-                        <h1>Projet Biosphere7 <h3>Création d'une inteligence artificielle</h3></h1>
+                        <h1>Projet Biosphere7 <h3>Création d'une inteligence artificielle</h3>
+                        </h1>
                     </div>
                     <div class="carouselLogo">
                         <img src="img/logoCarousel/Java-Logo.png" alt="logo_java">
-                        <img id="logo_netbeans" src="img/logoCarousel/1200px-Apache_NetBeans_Logo.svg.png" alt="logo_netbeans">
+                        <img id="logo_netbeans" src="img/logoCarousel/1200px-Apache_NetBeans_Logo.svg.png"
+                            alt="logo_netbeans">
                     </div>
                     <div class="carouselImg">
                         <img src="img/ImgSAE/Img_SAEBiosphere.png" alt="img_biosphere">
@@ -96,7 +122,8 @@
                         <div class="cercleR"></div>
                     </div>
                     <div class="carouselText">
-                        <h1>Instalation de poste <h3>Mise en place d'un poste de travail sous Linux</h3></h1>
+                        <h1>Instalation de poste <h3>Mise en place d'un poste de travail sous Linux</h3>
+                        </h1>
                     </div>
                     <div class="carouselLogo">
                         <img src="img/logoCarousel/logo_debian.png" alt="logo_debian">
@@ -105,7 +132,7 @@
                     <div class="carouselImg">
                         <img src="img/ImgSAE/Img_SAESyst.png" alt="img_systeme">
                     </div>
-                    <span><a href="">En savoir plus ...</a></span>  
+                    <span><a href="">En savoir plus ...</a></span>
                 </div>
                 <div class="diapo">
                     <div class="cercles">
@@ -114,7 +141,8 @@
                         <div class="cercleR"></div>
                     </div>
                     <div class="carouselText">
-                        <h1>Diagnostique externe Groupama <h3>Elaboration du diagnostique externe d'une entreprise</h3></h1>
+                        <h1>Diagnostique externe Groupama <h3>Elaboration du diagnostique externe d'une entreprise</h3>
+                        </h1>
                     </div>
                     <div class="carouselLogo">
                         <img src="img/logoCarousel/Google-Drive-Logo-Transparent.png" alt="logo_drive">
@@ -132,7 +160,8 @@
                         <div class="cercleR"></div>
                     </div>
                     <div class="carouselText">
-                        <h1>Création d'une base de donnée <h3>Création d'un modèle conceptuel de données</h3></h1>
+                        <h1>Création d'une base de donnée <h3>Création d'un modèle conceptuel de données</h3>
+                        </h1>
                     </div>
                     <div class="carouselLogo">
                         <img src="img/logoCarousel/Sql_data_base_with_logo.png" alt="logo_sql">
@@ -147,13 +176,17 @@
 
             <div id="Arrow" class="arrow-wrapper">
                 <div class="arrow arrow--left" onclick="plusDivs(-1)">
-                  <span>Prev</span>
+                    <span>Prev</span>
                 </div>
                 <div class="arrow arrow--right" onclick="plusDivs(1)">
-                  <span>Next</span>
+                    <span>Next</span>
                 </div>
-              </div>
+            </div>
             <script src="script/carousel.js"></script>
+        </div>
+
+        <div class="diapoPhoneDisplay">
+
         </div>
 
         <script src="script/meDisplay.js"></script>
@@ -161,17 +194,18 @@
         <div id="MeDisplayID" class="MeDisplay">
             <div class="mePres">
                 <img src="img/me/IMG_4195.jpg" alt="meImg">
-            <h1>Lucas Girault-Viau</h1>
+                <h1>Lucas Girault-Viau</h1>
             </div>
             <div class="meText">
                 <p>Je suis un étudiant Développeur de 19 ans à l'IUT de Bordeaux en BUT Informatique</p>
             </div>
             <div class="meInline">
                 <img src="img/me/Profil.png" alt="img_profil">
-                <a id="cvButton" href="/pdf/CV Lucas Girault-Viau.pdf" download="Cv Lucas Girault-Viau">Télecharger CV en PDF</a>
+                <a id="cvButton" href="/pdf/CV Lucas Girault-Viau.pdf" download="Cv Lucas Girault-Viau">Télecharger CV
+                    en PDF</a>
             </div>
         </div>
-        
+
     </section>
     <footer>
 

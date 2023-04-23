@@ -1,14 +1,11 @@
 @import url(arrow.css);
 
 .Carousel{
-    position: relative;
     display: flex;
     flex-direction: column;
     z-index: 2;
     width: 40vw;
     height: 40vh;
-    top: 10%;
-    left: 18vw;
 }
 
 .carouselImg{

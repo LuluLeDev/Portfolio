@@ -1,5 +1,6 @@
 @import url(import/font.css);
 @import url(carousel.css);
+@import url(burger.css);
 
 body {
     height: 100vh;
@@ -12,12 +13,12 @@ body {
 
 header {
     display: flex;
-    background-color: rgb(56, 53, 53);
     height: 15vh;
 }
 
 .nameHeader {
-    padding-left: 45vw;
+    z-index: 3;
+    padding-left: 6vw;
 }
 
 .name {
@@ -25,7 +26,7 @@ header {
     margin-top: 2vh;
 }
 
-.name h1{
+.name h1 {
     margin-top: -16px;
     letter-spacing: 0.08rem;
 }
@@ -38,56 +39,74 @@ header {
     padding-left: 4vw;
 }
 
-.contactHeader {
-    padding-left: 30vw;
+.buttonHeaderLeft {
+    z-index: 3;
+    padding-left: 10vw;
 }
 
-.contactHeader button {
+.buttonHeaderLeft button {
+    background: none;
     margin-top: 5.5vh;
     font-family: 'Righteous', cursive;
     border: none;
     font-weight: bold;
-    background-color: rgb(56, 53, 53);
-    font-size: 18px;
-}
-
-.contactHeader button a {
-    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    padding-inline: 5vw;
     color: whitesmoke;
-    letter-spacing: 0.08rem;
-    position: relative;
 }
 
-.contactHeader a::after{
+.buttonHeaderLeft button::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0px;
     content: "";
     display: block;
     height: 2.5px;
     position: absolute;
-    background: #fff;
     transition: width 0.5s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 
-.contactHeader a:hover::after{
+.buttonHeaderLeft:hover::after {
     width: 100%;
 }
 
+.buttonHeaderRight {
+    z-index: 3;
+    padding-left: 7vw;
+}
+
+.buttonHeaderRight button {
+    background: none;
+    margin-top: 5.5vh;
+    font-family: 'Righteous', cursive;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    padding-inline: 5vw;
+    color: whitesmoke;
+}
+
 #mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 85vh;
     background-color: rgb(100, 96, 96);
 }
 
-#mid .backImg{
+.backImg {
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     filter: blur(1.3px);
 }
 
-.SocialButtons a{
+.SocialButtons a {
     position: absolute;
     z-index: 2;
     left: 96%;
@@ -95,32 +114,29 @@ header {
     transition-duration: 0.8s;
 }
 
-.SocialButtons .logo{
+.SocialButtons .logo {
     width: 83%;
 }
 
-.SocialButtons a:hover{
+.SocialButtons a:hover {
     transform: scale(1.1);
 }
 
-.SocialButtons a:nth-child(2){
+.SocialButtons a:nth-child(2) {
     top: 48% !important;
 }
 
-.SocialButtons a:nth-child(3){
+.SocialButtons a:nth-child(3) {
     top: 56% !important;
 }
 
-#mid button {
-    position: relative;
+#meButton{
     z-index: 3;
     width: 150px;
     height: 50px;
     border-radius: 30px;
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
-    top: 38%;
-    left: 45.5vw;
 
     display: block;
     width: 140px;
@@ -130,12 +146,12 @@ header {
     font-size: 18px;
 }
 
-#mid button:hover {
+#meButton:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.MeDisplay{
+.MeDisplay {
     display: none;
     flex-direction: column;
     position: relative;
@@ -148,48 +164,48 @@ header {
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
     background-color: rgba(8, 8, 8, 0.397);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
 }
 
-.MeDisplay img{
+.MeDisplay img {
     width: 12vw;
     height: 18vh;
-    border-radius: 100%;
+    border-radius: 50px;
     margin-left: 33%;
 }
 
-.mePres{
+.mePres {
     margin: 10px;
     letter-spacing: 0.08rem;
 }
 
-.mePres h1{
+.mePres h1 {
     text-align: center;
 }
 
-.meText{
+.meText {
     margin-left: 2rem;
     text-align: center;
 }
 
-.meInline img{
+.meInline img {
     border-radius: 10px;
     width: 40%;
     height: 75%;
     margin-left: 1.2rem;
 }
 
-.mePres h1{
+.mePres h1 {
     color: rgb(131, 168, 202);
 }
 
-.meInline{
+.meInline {
     display: flex;
 }
 
 #cvButton {
-    text-align:center;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,4 +225,19 @@ header {
 #cvButton:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .buttonHeaderLeft {
+        display: none;
+    }
+
+    .buttonHeaderRight {
+        display: none;
+    }
+
+    .nameHeader {
+        width: 75vw;
+        padding-left: 16vw;
+    }
 }
