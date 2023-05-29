@@ -198,4 +198,8 @@
     #web_logoCss {
         width: 15% !important;
     }
+
+    .cercles div {
+        width: 3vw;
+    }
 }
