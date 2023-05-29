@@ -2,23 +2,25 @@
 @import url(carousel.css);
 @import url(burger.css);
 
+html { overflow-y: hidden; } 
+
 body {
     height: 100vh;
     margin: 0;
     font-family: 'Righteous', cursive;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
 header {
     display: flex;
+    justify-content: center;
     height: 15vh;
 }
 
 .nameHeader {
     z-index: 3;
-    padding-left: 6vw;
 }
 
 .name {
@@ -39,61 +41,11 @@ header {
     padding-left: 4vw;
 }
 
-.buttonHeaderLeft {
-    z-index: 3;
-    padding-left: 10vw;
-}
-
-.buttonHeaderLeft button {
-    background: none;
-    margin-top: 5.5vh;
-    font-family: 'Righteous', cursive;
-    border: none;
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 0.05rem;
-    cursor: pointer;
-    padding-inline: 5vw;
-    color: whitesmoke;
-}
-
-.buttonHeaderLeft button::after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0px;
-    content: "";
-    display: block;
-    height: 2.5px;
-    position: absolute;
-    transition: width 0.5s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.buttonHeaderLeft:hover::after {
-    width: 100%;
-}
-
-.buttonHeaderRight {
-    z-index: 3;
-    padding-left: 7vw;
-}
-
-.buttonHeaderRight button {
-    background: none;
-    margin-top: 5.5vh;
-    font-family: 'Righteous', cursive;
-    border: none;
-    font-weight: bold;
-    font-size: 12px;
-    letter-spacing: 0.05rem;
-    cursor: pointer;
-    padding-inline: 5vw;
-    color: whitesmoke;
-}
-
 #mid {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 85vh;
     background-color: rgb(100, 96, 96);
 }
@@ -106,7 +58,7 @@ header {
     filter: blur(1.3px);
 }
 
-.SocialButtons a {
+#SocialButtonsMid a {
     position: absolute;
     z-index: 2;
     left: 96%;
@@ -114,8 +66,23 @@ header {
     transition-duration: 0.8s;
 }
 
+#SocialButtonsFooter {
+    display: none;
+}
+
+#SocialButtonsFooter a {
+    z-index: 3;
+    transition-duration: 0.8s;
+    width: 10vw;
+    margin-inline : 3vw;
+}
+
 .SocialButtons .logo {
-    width: 83%;
+    width: 3.5vw;
+}
+
+#SocialButtonsFooter .logo {
+    width: 8.5vw;
 }
 
 .SocialButtons a:hover {
@@ -132,8 +99,6 @@ header {
 
 #meButton{
     z-index: 3;
-    width: 150px;
-    height: 50px;
     border-radius: 30px;
     transition-duration: 0.8s;
     border: solid 2px rgb(56, 53, 53);
@@ -144,6 +109,7 @@ header {
     color: rgb(56, 53, 53);
     font-family: 'Righteous', cursive;
     font-size: 18px;
+    margin-bottom: 5vh;
 }
 
 #meButton:hover {
@@ -154,12 +120,10 @@ header {
 .MeDisplay {
     display: none;
     flex-direction: column;
-    position: relative;
     z-index: 3;
     width: 35vw;
-    height: 63vh;
-    top: -40vh;
-    left: 32vw;
+    margin-top: -60vh;
+    margin-bottom: 1%;
 
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
@@ -228,16 +192,22 @@ header {
 }
 
 @media screen and (max-width:700px) {
-    .buttonHeaderLeft {
+    #SocialButtonsMid {
         display: none;
     }
 
-    .buttonHeaderRight {
-        display: none;
+    #SocialButtonsFooter {
+        display: block;
+        z-index: 3;
     }
 
-    .nameHeader {
-        width: 75vw;
-        padding-left: 16vw;
+    .MeDisplay {
+        width: 100vw;
+        margin-top: -60vh;
+        margin-bottom: 8%;
+    }
+
+    .mePres img{
+        width: 30vw;
     }
 }
