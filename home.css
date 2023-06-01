@@ -1,0 +1,213 @@
+@import url(import/font.css);
+@import url(carousel.css);
+@import url(burger.css);
+
+html { overflow-y: hidden; } 
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 255, 255);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.nameHeader {
+    z-index: 3;
+}
+
+.name {
+    font-size: 0.9rem;
+    margin-top: 2vh;
+}
+
+.name h1 {
+    margin-top: -16px;
+    letter-spacing: 0.08rem;
+}
+
+.name h1:nth-child(2) {
+    padding-left: 2vw;
+}
+
+.name h1:nth-child(3) {
+    padding-left: 4vw;
+}
+
+#mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: rgb(100, 96, 96);
+}
+
+.backImg {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(1.3px);
+}
+
+#SocialButtonsMid a {
+    position: absolute;
+    z-index: 2;
+    left: 96%;
+    top: 40%;
+    transition-duration: 0.8s;
+}
+
+#SocialButtonsFooter {
+    display: none;
+}
+
+#SocialButtonsFooter a {
+    z-index: 3;
+    transition-duration: 0.8s;
+    width: 10vw;
+    margin-inline : 3vw;
+}
+
+.SocialButtons .logo {
+    width: 3.5vw;
+}
+
+#SocialButtonsFooter .logo {
+    width: 8.5vw;
+}
+
+.SocialButtons a:hover {
+    transform: scale(1.1);
+}
+
+.SocialButtons a:nth-child(2) {
+    top: 48% !important;
+}
+
+.SocialButtons a:nth-child(3) {
+    top: 56% !important;
+}
+
+#meButton{
+    z-index: 3;
+    border-radius: 30px;
+    transition-duration: 0.8s;
+    border: solid 2px rgb(56, 53, 53);
+
+    display: block;
+    width: 140px;
+    height: 50px;
+    color: rgb(56, 53, 53);
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    margin-bottom: 5vh;
+}
+
+#meButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.MeDisplay {
+    display: none;
+    flex-direction: column;
+    z-index: 3;
+    width: 35vw;
+    margin-top: -60vh;
+    margin-bottom: 1%;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(8, 8, 8, 0.397);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+.MeDisplay img {
+    width: 10vw;
+    height: 20vh;
+    border-radius: 20px;
+    margin-left: 33%;
+}
+
+.mePres {
+    margin: 10px;
+    letter-spacing: 0.08rem;
+}
+
+.mePres h1 {
+    text-align: center;
+}
+
+.meText {
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.meInline img {
+    border-radius: 10px;
+    width: 40%;
+    height: 75%;
+    margin-left: 1.2rem;
+}
+
+.mePres h1 {
+    color: rgb(131, 168, 202);
+}
+
+.meInline {
+    display: flex;
+}
+
+#cvButton {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    transition-duration: 0.8s;
+    border: solid 2px rgb(131, 168, 202);
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    margin-top: 6vh;
+    margin-left: 5vw;
+    color: rgb(131, 168, 202);
+    text-decoration: none;
+}
+
+#cvButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    #SocialButtonsMid {
+        display: none;
+    }
+
+    #SocialButtonsFooter {
+        display: block;
+        z-index: 3;
+    }
+
+    .MeDisplay {
+        width: 100vw;
+        margin-top: -60vh;
+        margin-bottom: 8%;
+    }
+
+    .mePres img{
+        width: 30vw;
+    }
+}
