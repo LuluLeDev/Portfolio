@@ -11,6 +11,12 @@ body {
     color: rgb(255, 255, 255);
     overflow-y: hidden;
     overflow-x: hidden;
+
+    background: url(../img/background/backgroundImg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
@@ -47,15 +53,6 @@ header {
     justify-content: center;
     align-items: center;
     height: 85vh;
-    background-color: rgb(100, 96, 96);
-}
-
-.backImg {
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    height: 100vh;
-    filter: blur(1.3px);
 }
 
 #SocialButtonsMid a {
@@ -119,6 +116,7 @@ header {
 
 .MeDisplay {
     display: none;
+    align-items: center;
     flex-direction: column;
     z-index: 3;
     width: 35vw;
@@ -132,40 +130,30 @@ header {
     backdrop-filter: blur(15px);
 }
 
-.MeDisplay img {
-    width: 12vw;
-    height: 18vh;
-    border-radius: 50px;
-    margin-left: 33%;
+.MeDisplay > div , .MeDisplay > a , .MeDisplay > img{
+    margin-top: 2vh;
 }
 
-.mePres {
-    margin: 10px;
-    letter-spacing: 0.08rem;
+#meImage{
+    width: 8vw;
+    height: 16vh;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, .25);
 }
 
-.mePres h1 {
-    text-align: center;
+.contactID{
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
 }
 
-.meText {
-    margin-left: 2rem;
-    text-align: center;
+.contactID p {
+    margin-left: 3%;
 }
 
-.meInline img {
-    border-radius: 10px;
-    width: 40%;
-    height: 75%;
-    margin-left: 1.2rem;
-}
-
-.mePres h1 {
-    color: rgb(131, 168, 202);
-}
-
-.meInline {
-    display: flex;
+.greyText{
+    color: rgba(255, 255, 255, 0.2);
+    margin-right: 2%;
 }
 
 #cvButton {
@@ -180,10 +168,9 @@ header {
     border: solid 2px rgb(131, 168, 202);
     font-family: 'Righteous', cursive;
     font-size: 18px;
-    margin-top: 6vh;
-    margin-left: 5vw;
     color: rgb(131, 168, 202);
     text-decoration: none;
+    margin-bottom: 2vh;
 }
 
 #cvButton:hover {
