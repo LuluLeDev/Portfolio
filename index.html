@@ -12,8 +12,9 @@
 
 <body>
     <header>
-        <button id="discoverFilter" class="filterButton">Découvrir</button>
-        <button id="webFilter" class="filterButton">Web</button>
+        <script src="script/filter.js"></script>
+        <button id="discoverFilter" class="filterButton" onclick="filter('discoverFilter')">Découvrir</button>
+        <button id="webFilter" class="filterButton" onclick="filter('webFilter')">Web</button>
 
         <div class="nameHeader">
             <div class="name">
@@ -23,8 +24,8 @@
             </div>
         </div>
 
-        <button id="progFilter" class="filterButton">Programmation</button>
-        <button id="sqlFilter" class="filterButton">SQL</button>
+        <button id="progFilter" class="filterButton" onclick="filter('progFilter')">Programmation</button>
+        <button id="otherFilter" class="filterButton" onclick="filter('otherFilter')">Autre</button>
     </header>
 
     <section id="mid">
@@ -38,7 +39,7 @@
                     src="img/logo/social-media-gbb614a6e9_1920 (3).png" alt="logo_mail"></a>
         </div>
         
-        <div class="Carousel">
+        <div id="carouselID" class="Carousel">
             <div class="container">
                 <div class="diapo">
                     <div class="cercles">
@@ -167,6 +168,36 @@
                 </div>
             </div>
             <script src="script/carousel.js"></script>
+        </div>
+
+        <div id="webDiv" class="sectionFilter">
+            <div id="webGroupama" class="componentFilter">
+
+            </div>
+        </div>
+
+        <div id="progDiv" class="sectionFilter">
+            <div id="odomo" class="componentFilter">
+
+            </div>
+
+            <div id="biosphere" class="componentFilter">
+
+            </div>
+        </div>
+
+        <div id="otherDiv" class="sectionFilter">
+            <div id="systeme" class="componentFilter">
+
+            </div>
+
+            <div id="gestion" class="componentFilter">
+
+            </div>
+
+            <div id="bd" class="componentFilter">
+
+            </div>
         </div>
 
         <div class="diapoPhoneDisplay">

@@ -1,6 +1,7 @@
 @import url(import/font.css);
 @import url(carousel.css);
 @import url(burger.css);
+@import url(filter.css);
 
 html { overflow-y: hidden; } 
 
@@ -84,7 +85,7 @@ header {
     width: 93%;
 }
 
-#sqlFilter:hover::after{
+#otherFilter:hover::after{
     width: 80%;
 }
 
