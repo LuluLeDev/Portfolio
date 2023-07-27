@@ -1,12 +1,35 @@
 .sectionFilter{
     display: none;
-    flex-direction: column;
     z-index: 3;
     width: 65vw;
-    height: 70vh;
+    height: 65vh;
+    margin-bottom: 2%;
     border: 1px solid rgba(255, 255, 255, 0.192);
     border-radius: 20px;
     background-color: rgba(8, 8, 8, 0.397);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); 
     backdrop-filter: blur(15px);
+}
+
+.componentFilter{
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    width: 28%;
+    height: 45%;
+    margin: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    border-radius: 20px;
+    background-color: rgba(8, 8, 8, 0.397);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); 
+    backdrop-filter: blur(15px);
+}
+
+.componentFilter h4{
+    color: rgb(131, 168, 202);
+}
+
+.componentFilter:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
