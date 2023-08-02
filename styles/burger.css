@@ -43,7 +43,7 @@
   width: 100vw;
   height: 30vh;
   z-index: 4;
-  background-color: rgba(104, 102, 102, 0.9);
+  background-color: rgba(104, 102, 102, 0.91);
   color: rgb(56, 53, 53);
   border-radius: 0% 0% 5% 5%;
 }
