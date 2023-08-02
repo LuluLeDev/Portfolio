@@ -1,6 +1,7 @@
 #burgerButton{
-  display: flex;
+  display: none;
   flex-direction: column;
+  z-index: 5;
   position: absolute;
   top: 5%;
   left: 4%;
@@ -36,6 +37,55 @@
 
 #burgerMenu{
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 30vh;
+  z-index: 4;
+  background-color: rgba(104, 102, 102, 0.9);
+  color: rgb(56, 53, 53);
+  border-radius: 0% 0% 5% 5%;
+}
+
+.filterButtonBurger{
+  cursor: pointer;
+  border: none;
+  font-family: 'Righteous', cursive;
+  background: none;
+  color: rgb(56, 53, 53);
+  margin-top: 1em;
+  position: relative;
+  font-size: x-large;
+  height: min-content;
+}
+
+.filterButtonBurger::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: -0.5px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: rgb(56, 53, 53);
+  transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#discoverFilterBurger:hover::after{
+  width: 88%;
+}
+
+#webFilterBurger:hover::after{
+  width: 78%;
+}
+
+#progFilterBurger:hover::after{
+  width: 93%;
+}
+
+#otherFilterBurger:hover::after{
+  width: 80%;
 }
 
 @media screen and (max-width:700px) {

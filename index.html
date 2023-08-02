@@ -12,26 +12,24 @@
 
 <body>
     <header>
-        <div id="burgerButton">
-            <div class="burgerLine"></div>
-            <div class="burgerLine"></div>
-            <div class="burgerLine"></div>
+        <div id="burgerButton" onclick="showBurgerMenu()">
+            <div id="line1" class="burgerLine"></div>
+            <div id="line2" class="burgerLine"></div>
+            <div id="line3" class="burgerLine"></div>
         </div>
           
-        <nav id="burgerMenu">
-            <ul>
-                <li><a>Découvrir</a></li>
-                <li><a>Web</a></li>
-                <li><a>Programmation</a></li>
-                <li><a>Autre</a></li>									
-            </ul>
-        </nav>
+        <div id="burgerMenu">
+            <button id="discoverFilterBurger" class="filterButtonBurger" onclick="filter('discoverFilter')">Découvrir</button>
+            <button id="webFilterBurger" class="filterButtonBurger" onclick="filter('webFilter')">Web</button>
+            <button id="progFilterBurger" class="filterButtonBurger" onclick="filter('progFilter')">Programmation</button>
+            <button id="otherFilterBurger" class="filterButtonBurger" onclick="filter('otherFilter')">Autre</button>
+        </div>
         <script src="script/burger.js"></script>
         <script src="script/filter.js"></script>
         <button id="discoverFilter" class="filterButton" onclick="filter('discoverFilter')">Découvrir</button>
         <button id="webFilter" class="filterButton" onclick="filter('webFilter')">Web</button>
 
-        <div class="nameHeader">
+        <div id="nameTitle" class="nameHeader">
             <div class="name">
                 <h1>Lucas</h1>
                 <h1>Girault</h1>
