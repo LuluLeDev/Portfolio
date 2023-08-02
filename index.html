@@ -12,6 +12,21 @@
 
 <body>
     <header>
+        <div id="burgerButton">
+            <div class="burgerLine"></div>
+            <div class="burgerLine"></div>
+            <div class="burgerLine"></div>
+        </div>
+          
+        <nav id="burgerMenu">
+            <ul>
+                <li><a>Découvrir</a></li>
+                <li><a>Web</a></li>
+                <li><a>Programmation</a></li>
+                <li><a>Autre</a></li>									
+            </ul>
+        </nav>
+        <script src="script/burger.js"></script>
         <script src="script/filter.js"></script>
         <button id="discoverFilter" class="filterButton" onclick="filter('discoverFilter')">Découvrir</button>
         <button id="webFilter" class="filterButton" onclick="filter('webFilter')">Web</button>

@@ -239,4 +239,8 @@ header {
     .mePres img{
         width: 30vw;
     }
+
+    .filterButton{
+        display: none;
+    }
 }

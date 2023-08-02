@@ -186,12 +186,12 @@
         width: 100vw;
     }
 
-    .carouselImg {
-        width: 100vw;
+    .carouselImg img{
+        width: 100%;
     }
 
     .carouselLogo img {
-        width: 30%;
+        width: 100%;
     }
 
     #logo_netbeans {
