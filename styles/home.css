@@ -3,7 +3,11 @@
 @import url(burger.css);
 @import url(filter.css);
 
-html { overflow-y: hidden;  overflow-x: hidden;} 
+html { 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgb(27, 27, 27);
+} 
 
 body {
     height: 100vh;
