@@ -191,11 +191,7 @@
     }
 
     .carouselImg img{
-        width: 100%;
-    }
-
-    .carouselLogo img {
-        width: 100%;
+        width: 100% !important;
     }
 
     #logo_netbeans {
@@ -208,5 +204,45 @@
 
     #web_logoCss {
         width: 15% !important;
+    }
+
+    #logo_sql{
+        width: 18%;
+        height: 6.5vh;
+    }
+    
+    #logo_winDesign{
+        width: 18%;
+        height: 6.5vh;
+    }
+    
+    #logo_debian{
+        width: 18%;
+        height: 9vh;
+    }
+    
+    #logo_git{
+        width: 18%;
+        height: 8vh;
+    }
+    
+    #logo_gestion{
+        width: 18%;
+    }
+
+    #logo_drive{
+        width: 18%;
+    }
+    
+    #logo_python{
+        width: 18%;
+    }
+    
+    #logo_cs{
+        width: 18%;
+    }
+
+    #logo_java {
+        width: 35%;
     }
 }
