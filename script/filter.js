@@ -28,28 +28,52 @@ function filter(id){
             case "webFilter":
                 divFilter = getComputedStyle(divWeb, null);
                 if(divFilter.getPropertyValue("display") == "none"){
-                    divCarousel.style.display = "none";
-                    divWeb.style.display = "flex";
-                    divProg.style.display = "none";
-                    divOther.style.display = "none";
+                    if(screen.width > 700){
+                        divCarousel.style.display = "none";
+                        divWeb.style.display = "flex";
+                        divProg.style.display = "none";
+                        divOther.style.display = "none";
+                    }
+                    else{
+                        divCarousel.style.display = "none";
+                        divWeb.style.display = "inline-block";
+                        divProg.style.display = "none";
+                        divOther.style.display = "none";
+                    }
                 }
                 break;
             case "progFilter":
                 divFilter = getComputedStyle(divProg, null);
                 if(divFilter.getPropertyValue("display") == "none"){
-                    divCarousel.style.display = "none";
-                    divWeb.style.display = "none";
-                    divProg.style.display = "flex";
-                    divOther.style.display = "none";
+                    if(screen.width > 700){
+                        divCarousel.style.display = "none";
+                        divWeb.style.display = "none";
+                        divProg.style.display = "flex";
+                        divOther.style.display = "none";
+                    }
+                    else{
+                        divCarousel.style.display = "none";
+                        divWeb.style.display = "none";
+                        divProg.style.display = "inline-block";
+                        divOther.style.display = "none";
+                    }
                 }
                 break;
             case "otherFilter":
                 divFilter = getComputedStyle(divOther, null);
                 if(divFilter.getPropertyValue("display") == "none"){
-                    divCarousel.style.display = "none";
-                    divWeb.style.display = "none";
-                    divProg.style.display = "none";
-                    divOther.style.display = "flex";
+                    if(screen.width > 700){
+                        divCarousel.style.display = "none";
+                        divWeb.style.display = "none";
+                        divProg.style.display = "none";
+                        divOther.style.display = "flex";
+                    }
+                    else {
+                        divCarousel.style.display = "none";
+                        divWeb.style.display = "none";
+                        divProg.style.display = "none";
+                        divOther.style.display = "inline-block";
+                    }
                 }
                 break;
             }

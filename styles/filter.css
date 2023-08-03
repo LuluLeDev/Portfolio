@@ -48,3 +48,14 @@
     width: 90%;
     height: 65%;
 }
+
+@media screen and (max-width:700px) {
+    .sectionFilter {
+        width: 100vw;
+    }
+
+    .componentFilter{
+        width: 43%;
+        display: inline-block;
+    }
+}
