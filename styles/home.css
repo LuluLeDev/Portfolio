@@ -17,7 +17,7 @@ body {
     overflow-x: hidden;
     position: relative;
 
-    background: url(../img/background/backgroundImg.jpg) no-repeat center center fixed;
+    background: url(../img/background/pexels-alexander-kovalev-2847648.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -153,6 +153,7 @@ header {
     font-family: 'Righteous', cursive;
     font-size: 18px;
     margin-bottom: 5vh;
+    background: none;
 }
 
 #meButton:hover {

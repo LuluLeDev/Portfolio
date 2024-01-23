@@ -64,18 +64,15 @@
 .carouselImg img{
     width: 28vw;
     height: 30vh;
-    border-radius: 14px;
 }
 
 #img_biosphere {
     width: 24vw;
-    border-radius: 10px;
 }
 
 #img_systeme{
     width: 26vw;
     height: 30vh;
-    border-radius: 10px;
 }
 
 #img_bd{
@@ -90,6 +87,14 @@
 #web_logoHtml{
     width: 4.8vw !important;
     height: 8.5vh !important;
+}
+
+#logo_sym{
+    width: 5em;
+}
+
+#logo_js{
+    width: 8em;
 }
 
 #web_logoCss{
